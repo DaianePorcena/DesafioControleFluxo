@@ -1,18 +1,34 @@
-## Getting Started
+# Desafio - Controle de  Fluxo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+O objetivo deste desafio consiste em exercitar todo o conteúdo apresentado nos módulos: Controle de Fluxo e Tratamento de Exceções do bootcamp [Santander 2024 - Backend com Java](https://web.dio.me/track/santander-2024-backend-com-java).
 
-## Folder Structure
+## 📜 Instruções
 
-The workspace contains two folders by default, where:
+O sistema deverá receber dois parâmetros via terminal que representarão dois números inteiros, com estes dois números você deverá obter a quantidade de interações (for) e realizar a impressão no console (System.out.print) dos números incrementados, exemplo:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Se você passar os números 12 e 30, logo teremos uma interação (for) com 18 ocorrências para imprimir os números, exemplo: "Imprimindo o número 1", "Imprimindo o número 2" e assim por diante.
+- Se o primeiro parâmetro for MAIOR que o segundo parâmetro, você deverá lançar a exceção customizada chamada de ParametrosInvalidosException com a segunda mensagem: "O segundo parâmetro deve ser maior que o primeiro"
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Crie o projeto ``DesafioControleFluxo``
+2. Dentro do projeto, crie a classe ``Contador.java`` para realizar toda a codificação do nosso programa.
+3. Dentro do projeto, crie a classe ``ParametrosInvalidosException`` que representará a exceção de negócio no sistema.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 🛠️ Instruções para Rodar o Projeto
 
-## Dependency Management
+- Clone o repositório
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+````
+git clone git@github.com:DaianePorcena/DesafioControleFluxo.git
+````
+- Navegue até o diretório ``\DesafioControleFluxo\src\``
+- Use o comando javac para compilar  o arquivo ``Contador.java``
+
+````
+javac Contador.java
+````
+
+- Execute o arquivo compilado:
+
+````
+java Contador
+````
